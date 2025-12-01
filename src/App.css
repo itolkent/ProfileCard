@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+#main-container{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 20px;
+background-color: #282c34;
+}
+#img-container{
+  text-align: center;
+  background-color: grey;
+  padding: 20px;
+  border-radius: 10px;
+}
+img{
+  margin: 10px 10px 0px 10px;
+  height: 500px;
+  border-radius: 10px;
+}
+h2{
+  margin: 0;
+
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+}
+h1{
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p{
+  color: aliceblue;
+  margin: 50px;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

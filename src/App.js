@@ -1,24 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import profileCard from '../src/profileCard.js'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {profileCard.map((profileCard, index) => (
+        <div key={index} >
+          <div id="main-container">
+            <div id="img-container">
+              <img src={profileCard.image} alt={profileCard.name} />
+              <h2>{profileCard.name}</h2>
+              <h1>{profileCard.jobTitle}</h1>
+            </div>
+
+            <p>{profileCard.bio}</p>
+          </div>
+
+        </div>
+      ))}
     </div>
+
   );
 }
 
